@@ -1,0 +1,17 @@
+<input class="form-control" type="text" placeholder="Ingresar nombre" #name>
+
+<button class="btn btn-primary mt-2" (click)="mostrar_en_c(name.value)">Mostrar en consola</button>
+
+<div class="alert alert-primary" *ngIf="openAlert; else mensaje">
+    <P>El mensaje se ha enviado</P>
+    <button class="btn btn-danger" (click)="openAlert = false">
+            ❌
+    </button>
+</div>
+
+
+<ng-template #mensaje>
+    <div class="alert alert-danger mt-2">
+        mensaje de prueba
+    </div>
+</ng-template>
