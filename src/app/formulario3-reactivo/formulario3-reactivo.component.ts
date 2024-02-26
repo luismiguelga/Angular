@@ -29,7 +29,7 @@ constructor(private fb: FormBuilder){}
 
   //Esto es lo mismo solo que ahora creamos grupos apartir de fb.group
   //en vez de poner new formgroup y ya no tenemos que especificar que los campos son
-  //isntancia de new form
+  //isntancia de new formcontrol (se hace para que se vea mas limpio y es mas simple)
 
   formuser = this.fb.group({
     'name': ['',Validators.required],
