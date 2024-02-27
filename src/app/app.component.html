@@ -1,6 +1,12 @@
 
 <!--Html -->
 <h1>Angular </h1>
-<!-- <input type="text" class="form-control" [(ngModel)]="title"> -->
+<h2>Componente padre</h2>
+<!-- Del padre al hijo: -->
+<input type="text" class="form-control" [(ngModel)]="title">
 <!-- Pasamos el parametro con el tittle -->
-<app-children [title]="title"></app-children>
+<!-- <app-children [title]="title"></app-children> -->
+
+
+<!-- Pasar del componente hijo al componente padre: -->
+<app-children (titlechange)="title= $event" ></app-children>

@@ -1,3 +1,10 @@
-<p>children works!</p>
-{{title}}
+<H1>Componente Hijo </H1>
+<!-- {{title}} -->
+
+<!-- Pasar datos del componente padre al hijo: -->
 <!-- <input type="text" class="form-control" [(ngModel)]="title"> -->
+
+
+
+<!-- Pasar datos del componente hijo al padre: -->
+<input type="text" class="form-control" (keyup)="emitTitlechange()" [(ngModel)]="title">
