@@ -1,0 +1,9 @@
+
+<ul>
+    <!-- Vamos a iterar la propiedad messages de nuestro serivicio -->
+    <!-- para iterar usamos el *ngfor -->
+    <!-- ponemos la variable message para recuperar los datos seguido del array que queremos iterar -->
+    <li *ngFor="let message of messagesService.messages">
+        {{message}}
+    </li>
+</ul>

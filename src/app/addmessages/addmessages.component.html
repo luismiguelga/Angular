@@ -1,0 +1,13 @@
+
+<!-- (ngSubmit)="addMessage" es para enviar el metodo que tenga el mismo nombre  -->
+<form action="" (ngSubmit)="addMessage()">
+    <label class="form-label">Ingrese un mensaje</label>
+    <!-- Para sincronizar algo de html con el ts se usa el [(ngModel)]="" ademas de que necesita un name -->
+    <input type="text" class="form-control" placeholder="Ingrese un mensaje" name="messages" [(ngModel)]="messages">
+    <button class="btn-primary">Agregar</button>
+</form>
+
+
+
+
+<!-- {{messagesService.messages | json}} -->

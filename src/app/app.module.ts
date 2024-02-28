@@ -12,6 +12,8 @@ import { Formulario2Component } from './formulario2/formulario2.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Formulario3ReactivoComponent } from './formulario3-reactivo/formulario3-reactivo.component';
 import { ChildrenComponent } from './children/children.component';
+import { AddmessagesComponent } from './addmessages/addmessages.component';
+import { ListmessagesComponent } from './listmessages/listmessages.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { ChildrenComponent } from './children/children.component';
     Formulario2Component,
     Formulario3ReactivoComponent,
     ChildrenComponent,
+    AddmessagesComponent,
+    ListmessagesComponent,
   ],
   imports: [
     BrowserModule,
